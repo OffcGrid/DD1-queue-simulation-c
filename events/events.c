@@ -29,7 +29,7 @@ void create_event(Event_List *list, EventType type, double time) {
     }
 }
 
-/* Removes and returns the event with the smallest time.
+
    The list must not be empty. */
 Event get_event(Event_List *list) {
     Event *min = list->head, *min_prev = NULL;
