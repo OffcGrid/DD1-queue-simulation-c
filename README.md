@@ -73,11 +73,5 @@ Run the simulation:
 
 Developed as part of a university practical assignment on queueing systems and discrete-event simulation.
 
-## Author
-
-**LITIB ABDELSALAM**
-
-Computer Science Student  
-University of Saad Dahlab – Blida 1
 
 GitHub: [@OffcGrid](https://github.com/OffcGrid)
