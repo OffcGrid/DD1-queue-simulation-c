@@ -5,7 +5,7 @@
 
 int main() {
     initialisisation();
-    while (client_served < 100) {
+    while (client_served < 10000) {
         Event e = get_event(&EventList);
         Tnow = e.time;
         switch (e.type) {
