@@ -13,9 +13,9 @@ typedef enum {
 typedef struct client
 {
     int id;
-    int t_arrival;
-    int t_start_service;
-    int t_service;
+    double t_arrival;
+    double t_start_service;
+    double t_service;
     struct client *suiv;
 } client;
 
@@ -29,14 +29,14 @@ typedef struct queue
 extern double Tnow;
 extern ServerStatus Server;
 extern queue QueueList;
-extern int arrival_time;
-extern int service_time;
+extern double arrival_time;
+extern double service_time;
 extern int id_client;
 extern client CurrentClient;
 
 void initial_queue(queue *q);
 bool is_empty(queue *q);
-void enqueue(queue *q, int id, int t_arrival, int t_start_service ,int t_service);
+void enqueue(queue *q, int id, double t_arrival, double t_start_service ,double t_service);
 bool dequeue(queue *q, client *c);
 
 
