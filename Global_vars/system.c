@@ -2,8 +2,8 @@
 
 
 double Tnow = 0;
-int arrival_time=0;
-int service_time=0;
+double arrival_time = 0.0;
+double service_time = 0.0;
 int id_client=0;
 ServerStatus Server = IDLE;
 queue QueueList;
@@ -19,7 +19,7 @@ bool is_empty(queue *q) {
     return (q->head == NULL);
 }
 
-void enqueue(queue *q, int id, int t_arrival, int t_start_service , int t_service) {
+void enqueue(queue *q, int id, double t_arrival, double t_start_service, double t_service) {
     client *new_client = (client *)malloc(sizeof(client));
     if (new_client == NULL) {
         return;                     
